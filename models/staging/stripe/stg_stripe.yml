@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_stripe__payments
+    description: Stage payments data from stripe app
+    columns:
+      - name: amount
+        description: The payment amount occured in the transaction
+      - name: created_at
+        description: Date of payment in YYYY-MM-DD format
+      - name: order_id
+        description: Order id associated with the payment 
+      - name: payment_id
+        description: Primary key for payment
+      - name: payment_method
+        description: Method used for the payment
+
